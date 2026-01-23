@@ -10,8 +10,8 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
 
     {/* <ThemeProvider theme={MyTheme}> */}
-      <App />
       <GlobalStyles />
+      <App />
     {/* </ThemeProvider> */}
   </StrictMode>,
 );
