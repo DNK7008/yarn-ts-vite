@@ -1,6 +1,6 @@
 import './App.css'
 import { Accordion } from './components/Accordion';
-import { Cards } from './components/Card';
+import { Cards } from './components/Cards';
 import Rating, { Title } from './components/Rating';
 
 function App() {
