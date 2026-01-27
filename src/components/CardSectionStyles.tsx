@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const CardSectionStyles = styled.div`
   display: flex;
@@ -31,6 +31,9 @@ margin-bottom: 20px;
 `;
 export const Text = styled.div`
   width: 260px;
+  & :last-child {
+    margin-left: 12px;
+  }
 `;
 export const TextTitle = styled.h2`
 margin-bottom: 20px;
@@ -46,9 +49,14 @@ margin-bottom: 19px;
   color: #abb3ba;
 `;
 
-export const CardButton = styled.button`
-  margin-right: 12px;
+type CardButtonStyledsProps = {
+  primary?: boolean;
+  outlined?: boolean;
+}
+
+export const CardButton = styled.button<CardButtonStyledsProps>`
   background-color: #4e71fe;
+  border: none;
   border-radius: 5px;
   width: 86px;
   height: 30px;
@@ -56,4 +64,14 @@ export const CardButton = styled.button`
   font-size: 10px;
   line-height: 200%;
   color: #fff;
+
+  ${(props) => props.primary && css<CardButtonStyledsProps>``}
+
+  ${(props) =>
+    props.outlined &&
+    css<CardButtonStyledsProps>`
+      border: 2px solid #4e71fe;
+      color: #4e71fe;
+      background-color: #fff;
+    `}
 `;

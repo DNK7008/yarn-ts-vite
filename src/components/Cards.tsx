@@ -27,8 +27,8 @@ export function Card() {
             Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie
             ornare in venen.
           </TextAbout>
-          <CardButton>See more</CardButton>
-          <CardButton>Save</CardButton>
+          <CardButton primary>See more</CardButton>
+          <CardButton outlined>Save</CardButton>
         </Text>
       </CardBox>
     </>
