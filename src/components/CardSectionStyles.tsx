@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { MyTheme } from "./ThemeStyled";
 
 export const CardSectionStyles = styled.div`
   display: flex;
@@ -71,22 +72,22 @@ export const CardButton = styled.button<CardButtonStyledsProps>`
   ${(props) =>
     props.btnType === "primary" &&
     css<CardButtonStyledsProps>`
-      background-color: ${};
+      background-color: ${MyTheme.colors.primary};
       &:hover {
-        border: 2px solid #4e71fe;
-        background-color: transparent;
-        color: #4e71fe;
+        border: 2px solid ${MyTheme.colors.primary};
+        background-color: ${MyTheme.colors.outlined};
+        color: ${MyTheme.colors.primary};
       }
     `}
 
   ${(props) =>
     props.btnType === "outlined" &&
     css<CardButtonStyledsProps>`
-      border: 2px solid #4e71fe;
-      color: #4e71fe;
-      background-color: transparent;
+      border: 2px solid ${MyTheme.colors.primary};
+      color: ${MyTheme.colors.primary};
+      background-color: ${MyTheme.colors.outlined};
       &:hover {
-        background-color: #4e71fe;
+        background-color: ${MyTheme.colors.primary};
         color: #fff;
       }
     `}

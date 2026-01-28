@@ -1,7 +1,7 @@
 export const MyTheme = {
   colors: {
     primary: "#4e71fe",
-    outline: "transparent",
+    outlined: "transparent",
     secondary: "pink",
     grey: {
       dark: "black",
@@ -9,6 +9,6 @@ export const MyTheme = {
     },
   },
 
-  media: "screen and (max-width: 768px) and (min-width: 577px)",
-  mobile: "screen and (max-width: 567px)",
+  // media: "screen and (max-width: 768px) and (min-width: 577px)",
+  // mobile: "screen and (max-width: 567px)",
 };
