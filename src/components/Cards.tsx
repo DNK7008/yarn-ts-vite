@@ -1,6 +1,5 @@
 import {CardBox, CardButton, CardImage, CardSectionStyles, Text, TextAbout, TextTitle } from "./CardSectionStyles";
 import myImage from "../assets/card-picture.jpg";
-import { Title } from "./Rating";
 
 export function Cards() {
   return (
@@ -27,8 +26,8 @@ export function Card() {
             Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie
             ornare in venen.
           </TextAbout>
-          <CardButton primary>See more</CardButton>
-          <CardButton outlined>Save</CardButton>
+          <CardButton btnType={"primary"}>See more</CardButton>
+          <CardButton btnType={"outlined"}>Save</CardButton>
         </Text>
       </CardBox>
     </>

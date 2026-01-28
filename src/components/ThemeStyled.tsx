@@ -1,7 +1,7 @@
 export const MyTheme = {
   colors: {
-    primary: "green",
-    outline: "red",
+    primary: "#4e71fe",
+    outline: "transparent",
     secondary: "pink",
     grey: {
       dark: "black",

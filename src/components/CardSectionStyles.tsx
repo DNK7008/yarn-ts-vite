@@ -24,7 +24,7 @@ export const CardBox = styled.div`
 `;
 
 export const CardImage = styled.img`
-margin-bottom: 20px;
+  margin-bottom: 20px;
   width: 280px;
   height: 170px;
   border-radius: 10px;
@@ -36,13 +36,13 @@ export const Text = styled.div`
   }
 `;
 export const TextTitle = styled.h2`
-margin-bottom: 20px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 16px;
 `;
 
 export const TextAbout = styled.p`
-margin-bottom: 19px;
+  margin-bottom: 19px;
   font-weight: 500;
   font-size: 12px;
   line-height: 167%;
@@ -52,10 +52,10 @@ margin-bottom: 19px;
 type CardButtonStyledsProps = {
   primary?: boolean;
   outlined?: boolean;
-}
+  btnType: "primary" | "outlined";
+};
 
 export const CardButton = styled.button<CardButtonStyledsProps>`
-  background-color: #4e71fe;
   border: none;
   border-radius: 5px;
   width: 86px;
@@ -64,14 +64,30 @@ export const CardButton = styled.button<CardButtonStyledsProps>`
   font-size: 10px;
   line-height: 200%;
   color: #fff;
-
-  ${(props) => props.primary && css<CardButtonStyledsProps>``}
+  &:hover {
+    cursor: pointer;
+  }
 
   ${(props) =>
-    props.outlined &&
+    props.btnType === "primary" &&
+    css<CardButtonStyledsProps>`
+      background-color: ${};
+      &:hover {
+        border: 2px solid #4e71fe;
+        background-color: transparent;
+        color: #4e71fe;
+      }
+    `}
+
+  ${(props) =>
+    props.btnType === "outlined" &&
     css<CardButtonStyledsProps>`
       border: 2px solid #4e71fe;
       color: #4e71fe;
-      background-color: #fff;
+      background-color: transparent;
+      &:hover {
+        background-color: #4e71fe;
+        color: #fff;
+      }
     `}
 `;
