@@ -11,6 +11,9 @@ export const CardSectionStyles = styled.div`
   background-color: #ffffff;
   padding: 25px;
   min-height: 100vh;
+  /* div + div { ????
+    margin-right: 40px; 
+  } */
 `;
 
 export const CardBox = styled.div`
