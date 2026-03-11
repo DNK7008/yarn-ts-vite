@@ -39,7 +39,7 @@ export function Card(props: CardPropsType) {
           <TextTitle>{props.title}</TextTitle>
           <TextAbout>
             Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie
-            ornare in venenw.
+            ornare in venens.
           </TextAbout>
           <CardButton btnType={"primary"}>See more</CardButton>
           <CardButton btnType={"outlined"}>Save</CardButton>
